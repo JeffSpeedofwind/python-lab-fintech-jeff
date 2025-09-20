@@ -15,10 +15,15 @@ with col2:
     st.metric("Revenue","$3B","20%")
 with col3:
     st.metric("Users","1.2B",'50%')
+    
+name = st.text_input("name")
+st.write(name)
+
 
 st.line_chart(data['sales'])
-    
-st.header("Sales Table")
-st.subheader("This is a sales table")
-st.write(data)
+
+if st.button("show table"):
+    st.header("Sales Table")
+    st.subheader("This is a sales table")
+    st.write(data)
 
