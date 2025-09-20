@@ -1,2 +1,2 @@
 print("Jeff !")
-print("a Cat")
+print("a orange cat")
